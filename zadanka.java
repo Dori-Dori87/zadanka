@@ -34,6 +34,24 @@ public class Temperature {
         System.out.println(" wysokosc raty  = " + rata);
     }
 }
+    public static void zad12() {
+
+        int szukanaLiczba = 50;
+        do {
+            Scanner sc = new Scanner(System.in);
+            System.out.println("podaj  liczbe calkowita dodatnia od 1do 100 ");
+             int liczba = sc.nextInt();
+
+            if (liczba> szukanaLiczba){
+                System.out.println(" za duzo, podaj mniejsza");
+            } else if (liczba < szukanaLiczba) {
+                System.out.println("podales za mala wartosc, szukaj dalej");
+            } else {
+                System.out.println(" barawo wygrywasz!");
+            }
+        } while (szukanaLiczba == 50 );
+
+    }
 
 
 
