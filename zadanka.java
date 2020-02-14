@@ -52,7 +52,26 @@ public class Temperature {
         } while (szukanaLiczba == 50 );
 
     }
+    public static void zad14() {
 
+        Scanner sc = new Scanner(System.in);
+        char gwiazdki = '*';
+
+        System.out.println("podaj ilosc poziomow choinki");
+        int  pozionyChoinki = sc.nextInt();
+
+        for (int i = 0; i < pozionyChoinki ; i++) {
+            for (int j = 0; j < pozionyChoinki*2; j++) {
+                if (j< (pozionyChoinki - i) || j > (pozionyChoinki + i)) {
+                    System.out.println(" ");
+                } else {
+                    System.out.println(gwiazdki);
+                }
+
+                }
+            }
+        }
+    }
 
 
 
